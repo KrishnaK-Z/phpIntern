@@ -1,0 +1,116 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #e5e5e5;
+    background: linear-gradient(to right, #a8ff78, #78ffd6);
+    font-family: "Segoe UI";
+}
+.grid
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding : 6.5rem 2rem 2rem;
+    transform:  translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: repeat(2,280px);
+    background-color: #f4f5f7;
+    grid-row-gap: 2rem;
+    grid-column-gap: 1rem;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.05);
+    color: #a8aac5;
+    margin: 2rem 0;
+}
+
+.grid::after{
+    content: "Create an Account";
+    position: absolute;
+    display: block;
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+    font-size: 1.5em;
+    color: #155bda;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.5rem 2rem;
+    font-weight: 100;
+}
+
+
+.grid_item
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_label
+{
+    display: block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 0 0 0.5rem;
+}
+
+.input_box
+{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    color:#155bda;
+    padding: 1rem;
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+}
+.input_box:focus{
+    border-color: #4facfe;
+    outline: none;
+}
+
+
+.full_part
+{
+    grid-column: 1 / span 2;
+}
+
+
+.log_btn
+{
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size:  1rem;
+    border : 0;
+    background-image: linear-gradient(to right, #a8ff78, #78ffd6);
+    border-radius: 30px;
+    color: #fff;
+    align-self: center;
+    cursor: pointer;
+    transition: background-image 0.3s;
+}
+.log_btn:hover{
+    background-image:linear-gradient(to right, #78ffd6, #78ffd6);
+}
+
+.error
+{
+    color: red;
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+}
+.image
+{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 120px;
+}
+.image img{
+    width: 80px;
+    height: 90px;
+}
